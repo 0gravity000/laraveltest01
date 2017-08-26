@@ -6,7 +6,11 @@
   <body>
     <ul>
       @foreach ($tasks as $task)
-        <h1>{{ $task->body }}</h1>
+        <li>
+          <a href="../public/tasks/{{ $task->id }}">
+            {{ $task->body }}
+          </a>
+        </li>
       @endforeach
     </ul>
   </body>
